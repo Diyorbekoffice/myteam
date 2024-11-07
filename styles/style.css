@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Livvic';
+}
+
+:root {
+    --Midnight-Green: #014E56;
+    --Light-Coral: #F67E7E;
+    --White: #fff;
+    --Rapture-Bluer: #79C8C7;
+    --Police-Blue: #2C6269;
+    --Deep-Jungle-Green: #004047;
+    --Sacramento-State-Green: #012F34;
+    --Dark-Green: #002529;
+}
+
+.contianer {
+    background-color: var(--Midnight-Green);
+    padding: 0 165px;
+}
+
+
+/* --------------> header <--------------- */
+.header {
+    padding-top: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Midnight-Green);
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.navbar .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.header a {
+    text-decoration: none;
+    color: var(--White);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.header a:hover {
+    color: var(--Rapture-Bluer);
+}
+
+
+.header .contact a {
+    border: 2px solid var(--White);
+    color: var(--White);
+    padding: 9px 32px;
+    border-radius: 24px;
+}
+
+.header .contact a:hover {
+    background-color: var(--White);
+    color: var(--Midnight-Green);
+}
+
+
+/* --------------> content <--------------- */
+.content {
+    padding-top: 129px;
+    padding-bottom: 250px;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    background-image: url(./images/contentBGLeft.svg), url(./images/contentBGRight.svg);
+    background-repeat: no-repeat;
+    background-position: 0 120px, 850px bottom;
+    background-color: var(--Midnight-Green);
+}
+
+
+.content h1 {
+    width: 700px;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 100px;
+    color: var(--White);
+}
+
+.content span {
+    color: var(--Light-Coral);
+}
+
+.content-text {
+    display: flex;
+    align-items: end;
+    position: relative;
+    /* For absolute positioning of the pseudo element */
+}
+
+.content-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    /* Adds a 20px space on the left */
+
+    transform: translateY(-50%);
+    /* Vertically center the line */
+    width: 50px;
+    /* Adjust line thickness */
+    height: 4px;
+    /* Adjust line height */
+    background-color: var(--Rapture-Bluer);
+    /* Line color */
+}
+
+.content p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--White);
+}
+
+
+/* --------------> section top <--------------- */
+.section-top {
+    background-image:  url(./images/sectionBGtop.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-color: var(--Sacramento-State-Green);
+    padding: 140px;
+}
+
+.section-top .boxs {
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.section-top .boxs::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: var(--Light-Coral); 
+}
+
+.section-top .box-build{
+    margin-bottom: 32px;
+}
+
+.section-top .boxs-text{
+    width: 700px;
+}
+
+.section-top .boxs h2 {
+    font-size: 48px;
+    color: #fff;
+    line-height: 48px;
+}
+
+.section-top .box {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-top .box-build {
+    display: flex;
+    gap: 23px;
+}
+
+.section-top .box-text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.section-top h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--Light-Coral);
+}
+
+.section-top p {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--White);
+}
+
+/* --------------> section <--------------- */
+.section-bottom{
+    background-image: url(./images/sectionBGShape.svg), url(./images/sectionBGBottom.svg);
+    background-repeat: no-repeat;
+    background-position: left top, bottom right;
+    
+}
+.section-bottom .section-box{
+    padding: 140px 0;
+}
+
+.section-bottom h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    color: var(--White);
+}
+
+.section-bottom span{
+    color: var(--Rapture-Bluer);
+}
+.section-bottom .boxs{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 65px;
+    color: var(--White);
+}
+
+.section-bottom .box{
+    background-image: url(./images/“.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 36px;
+}
+
+.section-bottom p{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;     
+}
+
+.section-bottom h3{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--Rapture-Bluer);
+    margin-top: 24px;
+}
+
+.section-bottom h4{
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 18px;
+    margin-top: 2px;
+}
+
+.section-bottom img{
+    border-radius: 50%;
+    border: 2px solid var(--White);
+    margin-top: 52px;
+}
+
+.section-Block{
+    background-color: var(--Light-Coral);
+    padding: 76px 0;
+    background-image: url(./images/blockBG.svg) ;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    display: flex;
+    justify-content: center;
+    gap: 260px;
+}
+
+.section-Block h3{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--Sacramento-State-Green);
+}
+
+.section-Block a{
+    text-decoration: none;
+    color: var(--Sacramento-State-Green);
+    border: 2px solid;
+    border-radius: 24px;
+    padding: 9px 32px;
+}
+
+.section-Block a:hover{
+    color: var(--White);
+    background-color: var(--Sacramento-State-Green);
+    border: var(--Sacramento-State-Green);
+    
+}
+
+/* --------------> footer <--------------- */
+.footer{
+    background-color: var(--Dark-Green);
+    padding: 56px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .logo-info{
+    display: flex;
+    justify-content: space-between;
+    gap: 125px;
+}
+
+.footer .logo-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .logo-info a{
+    color: var(--White);
+    text-decoration: none;
+
+}
+
+.footer .page{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .logo-info a:hover{
+    color: var(--Rapture-Bluer);
+    
+}
+
+.footer .logo-info p{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: left;
+    color: var(--White);
+        
+}
+
+.messenger-copyright{
+    display: flex;
+    text-align: end;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--White);
+}
+
+.footer .messenger{
+    display: flex;
+    gap: 16px;
+}
+
+
+
+
+
+
+
+/* --------------> media <--------------- */
