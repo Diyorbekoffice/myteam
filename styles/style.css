@@ -30,6 +30,14 @@
     justify-content: space-between;
     background-color: var(--Midnight-Green);
 }
+.chek{
+    display: none;
+}
+
+
+.menu {
+    display: none;
+}
 
 .header-title {
     display: flex;
@@ -86,7 +94,7 @@
 
 
 .content h1 {
-    width: 700px;
+    max-width: 700px;
     font-weight: 700;
     font-size: 80px;
     line-height: 100px;
@@ -101,23 +109,17 @@
     display: flex;
     align-items: end;
     position: relative;
-    /* For absolute positioning of the pseudo element */
 }
 
 .content-text::before {
     content: "";
     position: absolute;
     top: 0;
-    /* Adds a 20px space on the left */
 
     transform: translateY(-50%);
-    /* Vertically center the line */
     width: 50px;
-    /* Adjust line thickness */
     height: 4px;
-    /* Adjust line height */
     background-color: var(--Rapture-Bluer);
-    /* Line color */
 }
 
 .content p {
@@ -130,7 +132,7 @@
 
 /* --------------> section top <--------------- */
 .section-top {
-    background-image:  url(./images/sectionBGtop.svg);
+    background-image: url(./images/sectionBGtop.svg);
     background-repeat: no-repeat;
     background-position: right bottom;
     background-color: var(--Sacramento-State-Green);
@@ -152,15 +154,15 @@
     left: 0;
     width: 50px;
     height: 4px;
-    background-color: var(--Light-Coral); 
+    background-color: var(--Light-Coral);
 }
 
-.section-top .box-build{
+.section-top .box-build {
     margin-bottom: 32px;
 }
 
-.section-top .boxs-text{
-    width: 700px;
+.section-top .boxs-text {
+    width-max: 700px;
 }
 
 .section-top .boxs h2 {
@@ -200,17 +202,18 @@
 }
 
 /* --------------> section <--------------- */
-.section-bottom{
+.section-bottom {
     background-image: url(./images/sectionBGShape.svg), url(./images/sectionBGBottom.svg);
     background-repeat: no-repeat;
     background-position: left top, bottom right;
-    
+
 }
-.section-bottom .section-box{
+
+.section-bottom .section-box {
     padding: 140px 0;
 }
 
-.section-bottom h2{
+.section-bottom h2 {
     font-size: 48px;
     font-weight: 700;
     line-height: 48px;
@@ -218,10 +221,11 @@
     color: var(--White);
 }
 
-.section-bottom span{
+.section-bottom span {
     color: var(--Rapture-Bluer);
 }
-.section-bottom .boxs{
+
+.section-bottom .boxs {
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -229,20 +233,20 @@
     color: var(--White);
 }
 
-.section-bottom .box{
+.section-bottom .box {
     background-image: url(./images/“.svg);
     background-repeat: no-repeat;
     background-position: top center;
     padding-top: 36px;
 }
 
-.section-bottom p{
+.section-bottom p {
     font-size: 15px;
     font-weight: 600;
-    line-height: 25px;     
+    line-height: 25px;
 }
 
-.section-bottom h3{
+.section-bottom h3 {
     font-size: 18px;
     font-weight: 700;
     line-height: 28px;
@@ -250,7 +254,7 @@
     margin-top: 24px;
 }
 
-.section-bottom h4{
+.section-bottom h4 {
     font-size: 13px;
     font-style: italic;
     font-weight: 500;
@@ -258,16 +262,16 @@
     margin-top: 2px;
 }
 
-.section-bottom img{
+.section-bottom img {
     border-radius: 50%;
     border: 2px solid var(--White);
     margin-top: 52px;
 }
 
-.section-Block{
+.section-Block {
     background-color: var(--Light-Coral);
     padding: 95px 0;
-    background-image: url(./images/blockBG.svg) ;
+    background-image: url(./images/blockBG.svg);
     background-repeat: no-repeat;
     background-position: left bottom;
     display: flex;
@@ -276,14 +280,14 @@
     gap: 260px;
 }
 
-.section-Block h3{
+.section-Block h3 {
     font-size: 48px;
     font-weight: 700;
     line-height: 48px;
     color: var(--Sacramento-State-Green);
 }
 
-.section-Block a{
+.section-Block a {
     text-decoration: none;
     color: var(--Sacramento-State-Green);
     border: 2px solid;
@@ -292,60 +296,60 @@
     transition: all .3s linear;
 }
 
-.section-Block a:hover{
+.section-Block a:hover {
     color: var(--White);
     background-color: var(--Sacramento-State-Green);
     border: var(--Sacramento-State-Green);
-    
+
 }
 
 /* --------------> footer <--------------- */
-.footer{
+.footer {
     background-color: var(--Dark-Green);
     padding: 56px 40px;
     display: flex;
     justify-content: space-between;
 }
 
-.footer .logo-info{
+.footer .logo-info {
     display: flex;
     justify-content: space-between;
     gap: 125px;
 }
 
-.footer .logo-link{
+.footer .logo-link {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.footer .logo-info a{
+.footer .logo-info a {
     color: var(--White);
     text-decoration: none;
     transition: all .3s linear;
 
 }
 
-.footer .page{
+.footer .page {
     display: flex;
     justify-content: space-between;
 }
 
-.footer .logo-info a:hover{
+.footer .logo-info a:hover {
     color: var(--Rapture-Bluer);
-    
+
 }
 
-.footer .logo-info p{
+.footer .logo-info p {
     font-size: 15px;
     font-weight: 600;
     line-height: 25px;
     text-align: left;
     color: var(--White);
-        
+
 }
 
-.messenger-copyright{
+.messenger-copyright {
     display: flex;
     text-align: end;
     flex-direction: column;
@@ -353,38 +357,38 @@
     color: var(--White);
 }
 
-.footer .messenger{
+.footer .messenger {
     display: flex;
     gap: 16px;
 }
 
 /* --------------> media <--------------- */
 
-/* 
-/* Katta ekranlar yoki Stol kompyuterlari (1200px dan katta) */
 @media (min-width: 1201px) {
     .container {
         max-width: 1140px;
     }
 }
 
-/* Kichik noutbuklar (1024px – 1200px) */
 @media (min-width: 1025px) and (max-width: 1200px) {
     .container {
         max-width: 960px;
-        padding: 0 60px;
+        /* padding: 0 60px; */
     }
 
-    .content{
-        background-image: url(./images/contentBGRight.svg); /* Faqat bitta rasm */
-        background-position: bottom center; /* Rasm pozitsiyasini o‘zgartirish */
+    .header{
+        padding: 60px;
+    }
+
+    .content {
+        background-image: url(./images/contentBGRight.svg);
+        background-position: bottom center;
         background-repeat: no-repeat;
         padding: 170px 60px;
 
     }
 }
 
-/* Planshetlar (768px – 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
     .container {
         max-width: 720px;
@@ -393,14 +397,14 @@
     }
 
 
-    .logo img{
+    .logo img {
         width: 128px;
         height: 32px;
     }
 
-    .content{
-        background-image: url(./images/contentBGRight.svg); /* Faqat bitta rasm */
-        background-position: bottom center; /* Rasm pozitsiyasini o‘zgartirish */
+    .content {
+        background-image: url(./images/contentBGRight.svg);
+        background-position: bottom center;
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
@@ -409,61 +413,63 @@
         padding: 170px 60px;
     }
 
-    .section-top{
+    .section-top {
         padding: 100px 60px;
-       
+
     }
 
-    .section-top .boxs{
+    .section-top .boxs {
         flex-direction: column;
         gap: 50px;
     }
-    
-    .section-bottom{
+
+    .section-bottom {
         padding: 60px 60px;
     }
+
     .section-bottom .boxs {
         flex-direction: column;
         width: 100%;
     }
-    .section-Block{
+
+    .section-Block {
         flex-direction: column;
         gap: 50px;
         padding: 50px;
     }
-    .section-Block h3{
-        
+
+    .section-Block h3 {
+
         font-size: 40px;
         flex-direction: column;
     }
 
 }
 
-/* Kichik planshetlar (480px – 768px) */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 900px) {
     .container {
         max-width: 90px;
     }
 
-    .header{
-        padding: 70px 60px 0 10px;
+    .header {
+        padding: 70px 90px 0 90px;
 
     }
 
-    .section-top .boxs{
+    .section-top .boxs {
         flex-direction: column;
         gap: 50px;
     }
-    
 
-    .logo img{
+
+    .logo img {
         width: 128px;
         height: 32px;
     }
 
-    .content{
-        background-image: url(./images/contentBGRight.svg); /* Faqat bitta rasm */
-        background-position: bottom center; /* Rasm pozitsiyasini o‘zgartirish */
+    .content {
+        background-image: url(./images/contentBGRight.svg);
+        background-position: bottom center;
         background-repeat: no-repeat;
         padding: 170px 60px;
         display: flex;
@@ -471,40 +477,208 @@
         text-align: center;
     }
 
-    .section-top{
-        padding: 100px 90px;
-       
+    .content-text::before {
+        content: none;
+
     }
 
-    .section-top .boxs{
+    .section-top {
+        padding: 100px 90px;
+
+    }
+
+    .section-top .boxs {
         flex-direction: column;
         gap: 50px;
     }
-    
-    .section-bottom{
+
+    .section-bottom {
         padding: 60px 60px;
     }
+
     .section-bottom .boxs {
         flex-direction: column;
         width: 100%;
     }
-    .section-Block{
+
+    .section-Block {
         flex-direction: column;
         gap: 50px;
         padding: 50px;
     }
-    .section-Block h3{
-        
+
+    .section-Block h3 {
+
         font-size: 40px;
         flex-direction: column;
     }
 
-    
-}
-/* Mobil (Kichik ekranlar: 480px va undan kichik) */
-@media (max-width: 480px) {
-    .container {
-        max-width: 100%; /* Kichik ekranlarda konteyner to‘liq kenglikni egallaydi */
+    .footer {
+        flex-direction: column;
+        gap: 50px;
     }
-   
-} 
+
+    .messenger-copyright {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+
+@media(max-width: 700px) {
+    .container {
+        padding: 0, 30px;
+    }
+    .styled-checkbox {
+        display: none;
+    }
+    
+    .sekret {
+        background-color: #002529;
+        position: absolute;
+        display: none;
+    }
+    
+    #checkbox:checked ~ .sekret {
+        display: block;
+    }
+    
+    .sekret-navbar {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    
+    .header {
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .header-title{
+        display: flex;
+        align-items: center;
+    }
+
+    .content h1{
+        font-size: 50px;
+    }
+    .content .content-text::before{
+        content: none;
+    }
+
+    .navbar,
+    .contact {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .content {
+        background-image: none;
+        flex-direction: column;
+        padding: 70px 70px;
+        text-align: center;
+    }
+
+    .section-top {
+        padding: 70px 70px;
+        align-items: center;
+        text-align: center;
+        
+        background-image: none;
+    }
+
+    .section-top .boxs {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section-top .boxs::before {
+        content: none;
+    }
+
+    .section-top .boxs-text h2 {
+        font-size: 40px;
+        padding: 0;
+        text-align: center;
+    }
+
+
+    .section-top .box-build {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .section-bottom {
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+        padding: 40px;
+    }
+
+
+    .section-bottom h2 {
+        font-size: 30px;
+    }
+
+    .section-bottom .boxs {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .section-Block {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        gap: 50px;
+        background-image: none;
+        padding: 40px;
+    }
+
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer .page {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .footer .logo-info {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .messenger-copyright {
+        gap: 20px;
+    }
+
+    .footer .messenger {
+        justify-content: center;
+    }
+    .footer p{
+        text-align: center;
+    }
+
+}

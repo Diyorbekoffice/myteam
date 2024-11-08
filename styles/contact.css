@@ -112,7 +112,7 @@
 
 .content input,  textarea{
     background-color: var(--Midnight-Green);
-    border: none; /* Barcha chegaralarni o'chirish */
+    border: none; 
     border-bottom: 2px solid var(--White); 
     padding-bottom: 17px;
     padding-top: 24px;
@@ -123,8 +123,13 @@
     resize: none;
 }
 .content input::placeholder, textarea::placeholder {
-    color: rgba(255, 255, 255, 0.7); /* Placeholder matn rangi */
-    opacity: 1; /* Placeholder matnining aniq ko‘rinishi uchun */
+    color: rgba(255, 255, 255, 0.7); 
+
+}
+
+.content input:focus, textarea:focus{
+    outline: none;
+    color: var(--Light-Coral);
 }
 
 .content a{
