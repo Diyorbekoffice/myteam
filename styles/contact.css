@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Livvic';
+}
+
+:root {
+    --Midnight-Green: #014E56;
+    --Light-Coral: #F67E7E;
+    --White: #fff;
+    --Rapture-Bluer: #79C8C7;
+    --Police-Blue: #2C6269;
+    --Deep-Jungle-Green: #004047;
+    --Sacramento-State-Green: #012F34;
+    --Dark-Green: #002529;
+}
+
+.contianer {
+    background-color: var(--Midnight-Green);
+    padding: 0 165px;
+}
+
+
+/* --------------> header <--------------- */
+.header {
+    padding-top: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Midnight-Green);
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.navbar .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.header a {
+    text-decoration: none;
+    color: var(--White);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    transition: all .3s linear;
+}
+
+.header a:hover {
+    color: var(--Rapture-Bluer);
+}
+
+
+.header .contact a {
+    border: 2px solid var(--White);
+    color: var(--White);
+    padding: 9px 32px;
+    border-radius: 24px;
+}
+
+.header .contact a:hover {
+    background-color: var(--White);
+    color: var(--Midnight-Green);
+}
+
+
+/* --------------> content <--------------- */
+.content {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    
+    gap: 130px;
+    background-image: url(./images/contentBGLeft.svg), url(./images/aboutPageImg/contentBG.svg);
+    background-repeat: no-repeat;
+    background-position: left 150px, right bottom ;
+    background-color: var(--Midnight-Green);
+    color: var(--White);
+}
+
+.content h2{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 100px;  
+}
+
+.content h5{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--Light-Coral);
+}
+
+.content .box-buld{
+    display: flex;
+    gap: 23px;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.content .box-right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.content input,  textarea{
+    background-color: var(--Midnight-Green);
+    border: none; /* Barcha chegaralarni o'chirish */
+    border-bottom: 2px solid var(--White); 
+    padding-bottom: 17px;
+    padding-top: 24px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    color: hwb(0 100% 0%);
+    resize: none;
+}
+.content input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Placeholder matn rangi */
+    opacity: 1; /* Placeholder matnining aniq ko‘rinishi uchun */
+}
+
+.content a{
+    text-decoration: none;
+    color: var(--Deep-Jungle-Green);
+    background-color: var(--White);
+    padding: 11px 32px;
+    border-radius: 28px;
+    width: 123px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-top: 24px;
+    border: 1px solid var(--Midnight-Green);
+    transition: all .3s linear;
+
+}
+
+.content a:hover{
+    color: var(--White);
+    background-color: var(--Midnight-Green);
+    border: 1px solid var(--White)
+    
+}
+
+
+
+/* --------------> footer <--------------- */
+.footer{
+    background-color: var(--Dark-Green);
+    padding: 56px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .logo-info{
+    display: flex;
+    justify-content: space-between;
+    gap: 125px;
+}
+
+.footer .logo-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .logo-info a{
+    color: var(--White);
+    text-decoration: none;
+    transition: all .3s linear;
+
+}
+
+.footer .page{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .logo-info a:hover{
+    color: var(--Rapture-Bluer);
+    
+}
+
+.footer .logo-info p{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: left;
+    color: var(--White);
+        
+}
+
+.messenger-copyright{
+    display: flex;
+    text-align: end;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--White);
+}
+
+.footer .messenger{
+    display: flex;
+    gap: 16px;
+}
+
+/* --------------> media <--------------- */
+
+
+

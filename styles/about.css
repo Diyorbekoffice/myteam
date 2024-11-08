@@ -78,9 +78,9 @@
     display: flex;
     justify-content: space-between;
     gap: 100px;
-    background-image: url(./images/contentBGLeft.svg), url(./images/contentBGRight.svg);
+    background-image: url(./images/aboutPageImg/contentBG.svg);
     background-repeat: no-repeat;
-    background-position: 0 120px, 850px bottom;
+    background-position: right bottom;
     background-color: var(--Midnight-Green);
 }
 
@@ -93,31 +93,21 @@
     color: var(--White);
 }
 
-.content span {
-    color: var(--Light-Coral);
-}
-
 .content-text {
+    padding-top: 44px;
     display: flex;
     align-items: end;
     position: relative;
-    /* For absolute positioning of the pseudo element */
 }
 
 .content-text::before {
     content: "";
     position: absolute;
     top: 0;
-    /* Adds a 20px space on the left */
-
     transform: translateY(-50%);
-    /* Vertically center the line */
     width: 50px;
-    /* Adjust line thickness */
     height: 4px;
-    /* Adjust line height */
-    background-color: var(--Rapture-Bluer);
-    /* Line color */
+    background-color: var(--Light-Coral);
 }
 
 .content p {
@@ -129,7 +119,7 @@
 
 
 /* --------------> section top <--------------- */
-.section-top {
+/* .section-top {
     background-image:  url(./images/sectionBGtop.svg);
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -197,13 +187,14 @@
     font-size: 15px;
     line-height: 25px;
     color: var(--White);
-}
+} */
 
 /* --------------> section <--------------- */
 .section-bottom{
-    background-image: url(./images/sectionBGShape.svg), url(./images/sectionBGBottom.svg);
+    background-image: url(./images/aboutPageImg/sectionBGLeft.svg), url(./images/sectionBGShape.svg);
     background-repeat: no-repeat;
     background-position: left top, bottom right;
+    background-color: var(--Deep-Jungle-Green);
     
 }
 .section-bottom .section-box{
@@ -215,12 +206,9 @@
     font-weight: 700;
     line-height: 48px;
     text-align: center;
-    color: var(--White);
+    color: var(--White);    
 }
 
-.section-bottom span{
-    color: var(--Rapture-Bluer);
-}
 .section-bottom .boxs{
     display: flex;
     justify-content: space-between;
@@ -229,50 +217,101 @@
     color: var(--White);
 }
 
-.section-bottom .box{
-    background-image: url(./images/“.svg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    padding-top: 36px;
+.section-bottom .box {
+    background-color: var(--Sacramento-State-Green);
+    width: 335px;
+    padding: 32px 0 56px 0;
+    position: relative;
+}
+
+.section-bottom .blok {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Light-Coral);
+    border-radius: 50%;
+    color: var(--Deep-Jungle-Green);
+    transition: all 0.3s linear; 
+}
+
+.section-bottom .blok:hover {
+    transform: translate(-50%, -50%) rotate(45deg); 
+    background-color: var(--Rapture-Bluer);
 }
 
 .section-bottom p{
     font-size: 15px;
-    font-weight: 600;
-    line-height: 25px;     
+    font-style: italic;
+    font-weight: 500;
+    line-height: 25px;
+    text-decoration-skip-ink: none;
+      
 }
 
-.section-bottom h3{
+.section-bottom h4{
     font-size: 18px;
     font-weight: 700;
     line-height: 28px;
     color: var(--Rapture-Bluer);
-    margin-top: 24px;
-}
-
-.section-bottom h4{
-    font-size: 13px;
-    font-style: italic;
-    font-weight: 500;
-    line-height: 18px;
-    margin-top: 2px;
+    text-decoration-skip-ink: none;
 }
 
 .section-bottom img{
     border-radius: 50%;
     border: 2px solid var(--White);
-    margin-top: 52px;
+    margin-bottom: 16px;
 }
 
+.section-bottom .images{
+    margin-top: 24px;
+}
+
+.section-bottom .images img{
+    margin-top: 24px;
+    border-radius:1px;
+    border: none;
+}
+
+/* ---------------------------------------------- */
+.banner{
+    background-color: var(--Sacramento-State-Green);
+    background-image: url(./images/aboutPageImg/barrnerBG.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-top: 140px;
+    padding: 150px;
+    text-align: center;
+}
+
+.banner h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--White);
+    margin-bottom: 100px;
+}
+
+.banner .clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+/* ---------------------------------------------- */
 .section-Block{
     background-color: var(--Light-Coral);
-    padding: 95px 0;
+    padding: 76px 0;
     background-image: url(./images/blockBG.svg) ;
     background-repeat: no-repeat;
     background-position: left bottom;
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 260px;
 }
 
@@ -360,151 +399,3 @@
 
 /* --------------> media <--------------- */
 
-/* 
-/* Katta ekranlar yoki Stol kompyuterlari (1200px dan katta) */
-@media (min-width: 1201px) {
-    .container {
-        max-width: 1140px;
-    }
-}
-
-/* Kichik noutbuklar (1024px – 1200px) */
-@media (min-width: 1025px) and (max-width: 1200px) {
-    .container {
-        max-width: 960px;
-        padding: 0 60px;
-    }
-
-    .content{
-        background-image: url(./images/contentBGRight.svg); /* Faqat bitta rasm */
-        background-position: bottom center; /* Rasm pozitsiyasini o‘zgartirish */
-        background-repeat: no-repeat;
-        padding: 170px 60px;
-
-    }
-}
-
-/* Planshetlar (768px – 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .container {
-        max-width: 720px;
-        padding: 0 90px;
-        margin: auto;
-    }
-
-
-    .logo img{
-        width: 128px;
-        height: 32px;
-    }
-
-    .content{
-        background-image: url(./images/contentBGRight.svg); /* Faqat bitta rasm */
-        background-position: bottom center; /* Rasm pozitsiyasini o‘zgartirish */
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding: 170px 60px;
-    }
-
-    .section-top{
-        padding: 100px 60px;
-       
-    }
-
-    .section-top .boxs{
-        flex-direction: column;
-        gap: 50px;
-    }
-    
-    .section-bottom{
-        padding: 60px 60px;
-    }
-    .section-bottom .boxs {
-        flex-direction: column;
-        width: 100%;
-    }
-    .section-Block{
-        flex-direction: column;
-        gap: 50px;
-        padding: 50px;
-    }
-    .section-Block h3{
-        
-        font-size: 40px;
-        flex-direction: column;
-    }
-
-}
-
-/* Kichik planshetlar (480px – 768px) */
-@media (min-width: 481px) and (max-width: 768px) {
-    .container {
-        max-width: 90px;
-    }
-
-    .header{
-        padding: 70px 60px 0 10px;
-
-    }
-
-    .section-top .boxs{
-        flex-direction: column;
-        gap: 50px;
-    }
-    
-
-    .logo img{
-        width: 128px;
-        height: 32px;
-    }
-
-    .content{
-        background-image: url(./images/contentBGRight.svg); /* Faqat bitta rasm */
-        background-position: bottom center; /* Rasm pozitsiyasini o‘zgartirish */
-        background-repeat: no-repeat;
-        padding: 170px 60px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .section-top{
-        padding: 100px 90px;
-       
-    }
-
-    .section-top .boxs{
-        flex-direction: column;
-        gap: 50px;
-    }
-    
-    .section-bottom{
-        padding: 60px 60px;
-    }
-    .section-bottom .boxs {
-        flex-direction: column;
-        width: 100%;
-    }
-    .section-Block{
-        flex-direction: column;
-        gap: 50px;
-        padding: 50px;
-    }
-    .section-Block h3{
-        
-        font-size: 40px;
-        flex-direction: column;
-    }
-
-    
-}
-/* Mobil (Kichik ekranlar: 480px va undan kichik) */
-@media (max-width: 480px) {
-    .container {
-        max-width: 100%; /* Kichik ekranlarda konteyner to‘liq kenglikni egallaydi */
-    }
-   
-} 
