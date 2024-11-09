@@ -162,7 +162,7 @@
 }
 
 .section-top .boxs-text {
-    width-max: 700px;
+    max-width: 700px;
 }
 
 .section-top .boxs h2 {
@@ -373,7 +373,6 @@
 @media (min-width: 1025px) and (max-width: 1200px) {
     .container {
         max-width: 960px;
-        /* padding: 0 60px; */
     }
 
     .header{
@@ -532,24 +531,74 @@
     }
     .styled-checkbox {
         display: none;
+    
     }
     
     .sekret {
-        background-color: #002529;
+        width: 100%;
+        height: 100%;
         position: absolute;
         display: none;
+        top: 0;
+        z-index: 2;
+        right: 0;
     }
     
     #checkbox:checked ~ .sekret {
         display: block;
+        display: flex;
     }
+
+    .secret-left{
+        width: 30%;
+        background-color: rgba(0, 37, 41, 0.7);
+        filter: blur(4px);
+    }
+
+    
     
     .sekret-navbar {
+        width: 70%;
         display: flex;
         flex-direction: column;
-        padding: 20px;
+        padding: 20px 20px 0 48px;
+        background-color: var(--Police-Blue);
+        background-image: url(./images/secretBG.svg);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+
+
+    .sekret-navbar label{
+        margin-bottom: 39px;
+        text-align: end;
+        display: flex;
+        justify-content: end;
     }
     
+    .sekret-navbar .contactpage{
+        max-width: 140px;
+        height: 40px;
+        margin-top: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+         border: 2px solid var(--White)
+    }
+
+    .sekret-navbar .contactpage:hover{
+       border-color: var(--Police-Blue);
+       color: var(--Police-Blue);
+       background: var(--White);
+    }
+    .sekret-navbar .homepage{
+        margin-bottom: 24px;
+    }
     
     .header {
         padding: 15px;
@@ -564,7 +613,8 @@
     }
 
     .content h1{
-        font-size: 50px;
+        font-size: 40px;
+        line-height: 50px;
     }
     .content .content-text::before{
         content: none;

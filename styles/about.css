@@ -30,6 +30,15 @@
     justify-content: space-between;
     background-color: var(--Midnight-Green);
 }
+.chek{
+    display: none;
+}
+
+
+.menu {
+    display: none;
+}
+
 
 .header-title {
     display: flex;
@@ -86,7 +95,6 @@
 
 
 .content h1 {
-    width: 700px;
     font-weight: 700;
     font-size: 80px;
     line-height: 100px;
@@ -118,76 +126,6 @@
 }
 
 
-/* --------------> section top <--------------- */
-/* .section-top {
-    background-image:  url(./images/sectionBGtop.svg);
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-color: var(--Sacramento-State-Green);
-    padding: 140px;
-}
-
-.section-top .boxs {
-    position: relative;
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    padding-top: 40px;
-}
-
-.section-top .boxs::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50px;
-    height: 4px;
-    background-color: var(--Light-Coral); 
-}
-
-.section-top .box-build{
-    margin-bottom: 32px;
-}
-
-.section-top .boxs-text{
-    width: 700px;
-}
-
-.section-top .boxs h2 {
-    font-size: 48px;
-    color: #fff;
-    line-height: 48px;
-}
-
-.section-top .box {
-    display: flex;
-    flex-direction: column;
-}
-
-.section-top .box-build {
-    display: flex;
-    gap: 23px;
-}
-
-.section-top .box-text {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.section-top h4 {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
-    color: var(--Light-Coral);
-}
-
-.section-top p {
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 25px;
-    color: var(--White);
-} */
 
 /* --------------> section <--------------- */
 .section-bottom{
@@ -211,17 +149,25 @@
 
 .section-bottom .boxs{
     display: flex;
-    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 20px;
     text-align: center;
     margin-top: 65px;
     color: var(--White);
 }
 
 .section-bottom .box {
+    margin-top: 28px;
     background-color: var(--Sacramento-State-Green);
     width: 335px;
     padding: 32px 0 56px 0;
     position: relative;
+
+}
+.section-bottom .boxs .box {
+    flex: 1 1 30%; /* Har bir box 30% kenglikda bo'lsin */
+    max-width: 30%; /* Maksimal kenglikni ham 30% qilish */
 }
 
 .section-bottom .blok {
@@ -312,6 +258,7 @@
     background-position: left bottom;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 260px;
 }
 
@@ -399,3 +346,398 @@
 
 /* --------------> media <--------------- */
 
+@media (min-width: 1201px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .header{
+        padding: 60px;
+    }
+
+    .content {
+        padding: 170px 60px;
+
+    }
+
+    .section-bottom .boxs .box {
+        flex: 1 1 48%; 
+        max-width: 48%;
+    }
+
+    .section-Block{
+        gap: 50px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 720px;
+        padding: 0 90px;
+        margin: auto;
+    }
+
+
+    .logo img {
+        width: 128px;
+        height: 32px;
+    }
+
+    .content {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+       
+    }
+
+    h1{
+        font-size: 64px;
+        text-align: center;
+    }
+
+
+
+    .content-text::before{
+        content: none;
+    }
+
+    .section-top {
+        padding: 100px 60px;
+
+    }
+
+    .section-top .boxs {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .section-bottom {
+        padding: 60px 60px;
+    }
+
+    .section-bottom .boxs .box {
+        flex: 1 1 48%; 
+        max-width:48%;
+    }
+   
+    .banner .clients img{
+        margin: auto;
+        max-width:90px;
+    }
+    .section-Block {
+        flex-direction: column;
+        gap: 50px;
+        padding: 50px;
+    }
+
+    .section-Block h3 {
+
+        font-size: 40px;
+        flex-direction: column;
+    }
+   
+
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .container {
+        max-width: 90px;
+    }
+
+    .header {
+        padding: 70px 90px 0 90px;
+
+    }
+
+
+
+    .section-top .boxs {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+
+    .logo img {
+        width: 128px;
+        height: 32px;
+    }
+
+    .content {
+
+        padding: 170px 170px;
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-text::before {
+        content: none;
+
+    }
+
+    .section-bottom {
+        padding: 60px 60px;
+    }
+
+    .section-bottom .boxs {
+        flex-wrap: wrap;
+       
+    }
+
+    .section-bottom .boxs .box {
+        flex: 1 1 48%; 
+        max-width:48%;
+    }
+
+    .section-Block {
+        flex-direction: column;
+        gap: 50px;
+        padding: 50px;
+    }
+    
+    .banner{
+        background-image: none;
+    }
+
+    .banner .clients{
+        flex-wrap: wrap;
+    }
+    .banner .clients img{
+        margin: auto;
+        max-width: 130px;
+    }
+
+    .section-Block h3 {
+
+        font-size: 40px;
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .messenger-copyright {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+
+@media(max-width: 700px) {
+    .container {
+        padding: 0, 30px;
+    }
+    .styled-checkbox {
+        display: none;
+    
+    }
+    
+    .sekret {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: none;
+        top: 0;
+        z-index: 2;
+        right: 0;
+    }
+    
+    #checkbox:checked ~ .sekret {
+        display: block;
+        display: flex;
+    }
+
+    .secret-left{
+        width: 30%;
+        background-color: rgba(0, 37, 41, 0.7);
+        filter: blur(4px);
+    }
+
+    
+    
+    .sekret-navbar {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px 0 48px;
+        background-color: var(--Police-Blue);
+        background-image: url(./images/secretBG.svg);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+
+
+    .sekret-navbar label{
+        margin-bottom: 39px;
+        text-align: end;
+        display: flex;
+        justify-content: end;
+    }
+    
+    .sekret-navbar .contactpage{
+        max-width: 140px;
+        height: 40px;
+        margin-top: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+         border: 2px solid var(--White)
+    }
+
+    .sekret-navbar .contactpage:hover{
+       border-color: var(--Police-Blue);
+       color: var(--Police-Blue);
+       background: var(--White);
+    }
+    .sekret-navbar .homepage{
+        margin-bottom: 24px;
+    }
+    
+    .header {
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .header-title{
+        display: flex;
+        align-items: center;
+    }
+
+    .content h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .content .content-text::before{
+        content: none;
+    }
+
+    .navbar,
+    .contact {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .content {
+        background-image: none;
+        flex-direction: column;
+        padding: 70px 70px;
+        text-align: center;
+    }
+
+   
+    .section-bottom {
+        display: flex;
+        padding-top: 0;
+        flex-direction: column;
+    }
+    .section-box{
+        padding: 0;
+    }
+
+
+
+
+    .section-bottom h2 {
+        font-size: 30px;
+
+    }
+
+    .section-bottom .boxs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        gap: 50px;
+    }
+    
+
+    .section-bottom .boxs .box {
+        max-width:100%;
+    }
+
+    .section-Block {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        gap: 50px;
+        background-image: none;
+        padding: 40px;
+    }
+
+    .banner{
+        background-image: none;
+        padding: 39px;
+        gap: 10px;
+    }
+
+    .banner .clients{
+        flex-direction: column;
+    }
+
+    .banner .clients img{
+        margin: auto;
+        max-width: 150px;
+    }
+
+
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer .page {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .footer .logo-info {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .messenger-copyright {
+        gap: 20px;
+    }
+
+    .footer .messenger {
+        justify-content: center;
+    }
+    .footer p{
+        text-align: center;
+    }
+
+}
